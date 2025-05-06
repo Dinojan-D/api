@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celestial API</title>
+</head>
+<body>
+  <h1>Welcome to the Celestial API</h1>
+  <p>Use the following URL to access the data:</p>
+  <pre><a href="https://TON_UTILISATEUR.github.io/api/data/solar-system/bodies.json">/api/data/solar-system/bodies.json</a></pre>
+
+  <script>
+    fetch('/api/data/solar-system/bodies.json')
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        document.body.innerHTML += `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+      })
+      .catch(error => console.error('Error fetching data:', error));
+  </script>
+</body>
+</html>
