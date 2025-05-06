@@ -3,21 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Celestial API</title>
+  <title>API Collection - Celestial Data</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2e3b4e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    section {
+      padding: 20px;
+      margin: 20px;
+    }
+    .api-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .api-box {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 300px;
+      padding: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .api-box h2 {
+      margin-top: 0;
+      color: #2e3b4e;
+    }
+    .api-box p {
+      font-size: 14px;
+      color: #555;
+    }
+    .api-box a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2e3b4e;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to the Celestial API</h1>
-  <p>Use the following URL to access the data:</p>
-  <pre><a href="https://TON_UTILISATEUR.github.io/api/data/solar-system/bodies.json">/api/data/solar-system/bodies.json</a></pre>
 
-  <script>
-    fetch('/api/data/solar-system/bodies.json')
-      .then(response => response.json())
-      .then(data => {
-        console.log(data);
-        document.body.innerHTML += `<pre>${JSON.stringify(data, null, 2)}</pre>`;
-      })
-      .catch(error => console.error('Error fetching data:', error));
-  </script>
+  <header>
+    <h1>Welcome to the API Collection</h1>
+    <p>A collection of APIs for different data sources. Currently, we have data related to the Solar System.</p>
+  </header>
+
+  <section>
+    <h2>Available APIs</h2>
+    <div class="api-container">
+      <div class="api-box">
+        <h2>Solar System Data</h2>
+        <p>This API provides celestial data about the Solar System, including planets, moons, and asteroids.</p>
+         <p>If you need info about an api do "https://dinojan-d.github.io/my-api/api/{path}/README.md" 
+            Exemple: "https://dinojan-d.github.io/my-api/api/data/solar-system/bodies.json"
+            "https://dinojan-d.github.io/my-api/api/data/solar-system/README.md"
+         </p>
+          
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Celestial API Collection</p>
+  </footer>
+
 </body>
 </html>
