@@ -3,7 +3,7 @@
 This API provides information about various celestial bodies in our solar system. It includes data on planets, moons, dwarf planets, asteroids, and the Sun. The data is structured in a way to support simulation and astronomical applications.
 
 ```
-https://github.com/Dinojan-D/api/new/main/data/solar-system/bodies.json
+https://dinojan-d.github.io/my-api/api/data/solar-system/bodies.json
 ```
 
 ## Properties
