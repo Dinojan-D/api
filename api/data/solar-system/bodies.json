@@ -97,7 +97,7 @@
   },
     {
     "name": "Moon",
-    "type": "Moon",
+    "type": "Satellite",
     "parent": "Earth",
     "mass_kg": 7.342e22,
     "radius_km": 1737.4,
@@ -108,7 +108,7 @@
   },
   {
     "name": "Io",
-    "type": "Moon",
+    "type": "Satellite",
     "parent": "Jupiter",
     "mass_kg": 8.9319e22,
     "radius_km": 1821.6,
@@ -119,7 +119,7 @@
   },
   {
     "name": "Europa",
-    "type": "Moon",
+    "type": "Satellite",
     "parent": "Jupiter",
     "mass_kg": 4.7998e22,
     "radius_km": 1560.8,
@@ -130,7 +130,7 @@
   },
   {
     "name": "Ganymede",
-    "type": "Moon",
+    "type": "Satellite",
     "parent": "Jupiter",
     "mass_kg": 1.4819e23,
     "radius_km": 2634.1,
@@ -141,7 +141,7 @@
   },
   {
     "name": "Titan",
-    "type": "Moon",
+    "type": "Satellite",
     "parent": "Saturn",
     "mass_kg": 1.3452e23,
     "radius_km": 2575,
